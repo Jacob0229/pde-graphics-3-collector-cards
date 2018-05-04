@@ -7,25 +7,26 @@
  */
  
 PImage Card; 
- 
+PFont myFont;
 void setup() {
   Card = loadImage("Card.jpg");
   size(300, 430); 
   background(255,255,255); 
+  myFont = createFont("DejaVu Serif Bold Italic", 26);
 }
 
 void draw() {  
 image(Card, 0, 0, 299, 429); 
-textSize(21);
+textFont(myFont);
 fill(0,0,0);
- text("Meh", 70,50);
-textSize(13);
+ text("Meh", 70,53);
+textSize(12);
 fill(0,0,0);
  text("Confuses two enemy monster cards", 30,340);
-textSize(13);
+textSize(12);
 fill(0,0,0);
  text("preventing the cards from doing ", 30,355);
-textSize(13);
+textSize(12);
 fill(0,0,0);
  text("anything", 30,370);
 strokeWeight(4);
